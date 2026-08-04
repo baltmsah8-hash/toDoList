@@ -18,16 +18,6 @@ btnAddTasks.onclick = () => {
     }
 };
 
-// ckek taskContainer is empty or no
-// function chekOnTaskContainer() {
-//     const title = `<h2 class='info'>No Tasks</h2>`;
-//     if (taskContainer.innerHTML.trim() === '') {
-//         taskContainer.innerHTML = title;
-//     } else if (taskContainer.innerHTML.trim() !== '') {
-//         document.querySelector('.info').remove();
-//     };
-// };
-
 function addTaskOntaskContainer(id, taskText) {
     let taskBox = document.createElement('div');
     taskBox.innerHTML = `<span>${taskText}</span><button class='delete'>Delete</button>`;
